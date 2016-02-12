@@ -58,24 +58,24 @@ html, body {
     display:inline;
 }
 .info {
-    margin: 0px 0px 5px;
-    line-height: 30px;
-    height: 30px;
     letter-spacing: 0.0625em;
 
 }
+.info ul {
+    padding:0;
+    margin-left:-50px;
+}
 
-.info p {
+.info li {
     color: #F5E9D3;
     font-size: 1.6em;
-    margin-bottom:0px;
-    margin-left: 10px;
     font-weight: bold;
-    line-height: 30px;
     vertical-align: middle;
+    list-style-type: none;
+    padding:0;
 
 }
-.info p a {
+.info li a {
         color: #F5E9D3;
 
 }
