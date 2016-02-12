@@ -119,4 +119,8 @@ html, body {
     margin-top: 10px;
 }
 
+.name {
+    font-size: 5em;
+}
+
 }
