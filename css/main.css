@@ -42,9 +42,9 @@ html, body {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -210px;
+  margin: 0 auto -200px;
   /* Pad bottom by footer height */
-  padding: 0 0 210px;
+  padding: 0 0 200px;
 }
 .footer {
     height: 200px;
@@ -96,6 +96,26 @@ html, body {
 .contact-form ul li input, .contact-form ul li textarea {
     font-size: 0.9em;
 }
+.contact-form button[type='submit'] {
+    border: 1.5px solid #74322c;
+    background: #F5E9D3;
+    color: #74322c;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-form button[type='submit']:hover {
+    background: #d7b999;
+    box-shadow: 1px 1px 1px #74322c;
+}
+
+.msg {
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+}
+
+/***** Typed cursor ****/
+
 .typed-cursor{
     opacity: 1;
     font-size: 2.5em;
