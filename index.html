@@ -18,40 +18,59 @@
 </head>
 <body id="main-container">
     <div id="wrap">
-    <div class="container main-body">
-        <div class="row centered main-text">
+        <div class="container main-body">
+             <div class="row centered main-text">
 
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1 class="name text-style" >Arka Nayan</h1>
+                 <div class="col-lg-8 col-lg-offset-2">
+                     <h1 class="name text-style" >Arka Nayan</h1>
+                 </div>
+             </div>
+
+            <div class="row centered desc-row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p class="text-style desc element"></p>
+                </div>
+            </div>
+
+            <div class="row centered desc-row">
+                <div class="col-lg-6 col-lg-offset-3 col-xs-11">
+                    <form action="http://formspree.io/itsarkanayan+portfolio@gmail.com" method="post" class="form-group contact-form" style="display: none">
+                        <ul class="text-style info">
+                            <li>
+                                <input type="text" class="form-control" placeholder="Name" name="name"/>
+                            </li><li>
+                                <input type="email" class="form-control" placeholder="Email" name="email"/>
+                            </li>
+                            <li>
+                               <textarea class="form-control" placeholder="Type your message here" name="message"></textarea>
+                            </li>
+                            <li>
+                            <button type="submit" class="btn btn-default" >Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </div>
 
-    <div class="row centered desc-row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <p class="text-style desc element"></p>
-
-
-            </div>
-
-    </div>
-
-    </div>
     </div>
     <div class="container-fluid footer-container">
-        <div class="row ">
+        <div class="row footer ">
 
-            <ul class="info col-md-3 col-sm-4 col-xs-9 center-block  footer">
+            <ul class="info col-md-3 col-sm-4 col-xs-10 center-block">
                 <li class="text-style">
                 <a href="tel://9563777896" > <img  class="icons" src="img/phone.svg" />9563777896</a>
                 </li>
 
                 <li class="text-style">
-                <a href="http://google.com" > <img  class="icons" src="img/web.svg" />itsarka.me</a>
+                <a href="http://arkanayan.github.io" > <img  class="icons" src="img/web.svg" />arkanayan.github.io</a>
                 </li>
                 <li class="text-style">
-                <a href="tel://9563777896" > <img  class="icons" src="img/email.svg" />mail@itsarka.me</a>
+                <a href="#" id="contact-btn"> <img  class="icons" src="img/email.svg" />Contact me</a>
                 </li>
             </ul>
+
+
 
     </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.2.0.min.js" ></script>
@@ -70,7 +89,14 @@
 
       });
   });
-
+    
+    $(function() {
+       $("#contact-btn").click(function (e) {
+           e.preventDefault();
+            $(".contact-form").toggle(500);
+       }) 
+    });
+    
 </script>
 
 </body>

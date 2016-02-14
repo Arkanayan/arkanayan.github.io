@@ -88,6 +88,14 @@ html, body {
 
 .center-block {float: none !important}
 
+.contact-form ul li {
+    list-style-type: none;
+    margin: 10px 0;
+
+}
+.contact-form ul li input, .contact-form ul li textarea {
+    font-size: 0.9em;
+}
 .typed-cursor{
     opacity: 1;
     font-size: 2.5em;
