@@ -1,43 +1,58 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 10, ../sass/main.scss */
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
+/* line 14, ../sass/main.scss */
 #main-container {
-    background-color: #f5e9d3;
+  background-color: #f5e9d3;
 }
 
+/* line 18, ../sass/main.scss */
 .main-text {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
+/* line 22, ../sass/main.scss */
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
-
+/* line 27, ../sass/main.scss */
 .name {
-
-    font-weight: bold;
-    font-size: 6em;
-    text-shadow: 0px 1px 0px #291414;
-
-    display: inline;
+  font-weight: bold;
+  font-size: 6em;
+  text-shadow: 0px 1px 0px #291414;
+  display: inline;
 }
+
+/* line 35, ../sass/main.scss */
 .main-body {
-    z-index: 10000;
+  z-index: 10000;
 }
+
+/* line 38, ../sass/main.scss */
 .desc {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
+/* line 42, ../sass/main.scss */
 .desc-row {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
+/* line 46, ../sass/main.scss */
 .text-style {
-    font-family: 'EB Garamond',Georgia, serif;
-     color: #74322c;
+  font-family: 'EB Garamond',Georgia, serif;
+  color: #74322c;
 }
+
+/* line 50, ../sass/main.scss */
 #wrap {
   min-height: 100%;
   height: auto;
@@ -46,114 +61,151 @@ html, body {
   /* Pad bottom by footer height */
   padding: 0 0 200px;
 }
+
+/* line 58, ../sass/main.scss */
 .footer {
-    height: 200px;
-    padding: 30px 30px 0;
+  height: 200px;
+  padding: 30px 30px 0;
 }
+
+/* line 62, ../sass/main.scss */
 .footer-container {
-
-    background-color: #74322c;
-    box-shadow: inset 0 20px 50px -20px #42211d;
-    /*box-shadow: 10px 2px 30px 2px #42211d;*/
+  background-color: #74322c;
+  box-shadow: inset 0 20px 50px -20px #42211d;
+  /*box-shadow: 10px 2px 30px 2px #42211d;*/
 }
+
+/* line 68, ../sass/main.scss */
 .element {
-    display:inline;
+  display: inline;
 }
+
+/* line 71, ../sass/main.scss */
 .info {
-    letter-spacing: 0.0625em;
-
+  letter-spacing: 0.0625em;
 }
 
+/* line 76, ../sass/main.scss */
 .top-margin {
-    margin-top: 30px;
+  margin-top: 30px;
 }
+
+/* line 79, ../sass/main.scss */
 .info li {
-    color: #F5E9D3;
-    font-size: 1.6em;
-    font-weight: bold;
-    vertical-align: middle;
-    list-style-type: none;
-    padding:0;
-
+  color: #F5E9D3;
+  font-size: 1.6em;
+  font-weight: bold;
+  vertical-align: middle;
+  list-style-type: none;
+  padding: 0;
 }
+
+/* line 88, ../sass/main.scss */
 .info li a {
-        color: #F5E9D3;
-
+  color: #F5E9D3;
 }
 
+/* line 93, ../sass/main.scss */
 .icons {
-    fill: #F5E9D3;
-    margin-right:5px;
+  fill: #F5E9D3;
+  margin-right: 5px;
 }
 
-.center-block {float: none !important}
+/* line 98, ../sass/main.scss */
+.center-block {
+  float: none !important;
+}
 
+/* line 100, ../sass/main.scss */
 .contact-form ul li {
-    list-style-type: none;
-    margin: 10px 0;
-
+  list-style-type: none;
+  margin: 10px 0;
 }
+
+/* line 105, ../sass/main.scss */
 .contact-form ul li input, .contact-form ul li textarea {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
+
+/* line 108, ../sass/main.scss */
 .contact-form button[type='submit'] {
-    border: 1.5px solid #74322c;
-    background: #F5E9D3;
-    color: #74322c;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1.5px solid #74322c;
+  background: #F5E9D3;
+  color: #74322c;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* line 116, ../sass/main.scss */
 .contact-form button[type='submit']:hover {
-    background: #d7b999;
-    box-shadow: 1px 1px 1px #74322c;
+  background: #d7b999;
+  box-shadow: 1px 1px 1px #74322c;
 }
 
+/* line 121, ../sass/main.scss */
 .msg {
-    font-size: 1.5em;
-    letter-spacing: 0.02em;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
 }
 
 /***** Typed cursor ****/
+/* line 129, ../sass/main.scss */
+.typed-cursor {
+  opacity: 1;
+  font-size: 2.5em;
+  color: #74322c;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
 
-.typed-cursor{
+@keyframes blink {
+  0% {
     opacity: 1;
-    font-size: 2.5em;
-    color: #74322c;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
 /* Media queries */
-
 @media (max-width: 768px) {
-
-.main-text {
+  /* line 157, ../sass/main.scss */
+  .main-text {
     margin-top: 50px;
-}
+  }
 
-.footer-container {
+  /* line 161, ../sass/main.scss */
+  .footer-container {
     margin-top: 10px;
-}
+  }
 
-.name {
+  /* line 165, ../sass/main.scss */
+  .name {
     font-size: 5em;
-}
-
+  }
 }

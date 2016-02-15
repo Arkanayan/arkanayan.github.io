@@ -1,0 +1,169 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+$light-color: #f5e9d3;
+$dark-color: #74322c;
+
+html, body {
+    height: 100%;
+}
+
+#main-container {
+    background-color: $light-color;
+}
+
+.main-text {
+    margin-top: 100px;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+.name {
+
+    font-weight: bold;
+    font-size: 6em;
+    text-shadow: 0px 1px 0px #291414;
+    display: inline;
+
+}
+.main-body {
+    z-index: 10000;
+}
+.desc {
+    font-size: 2.5em;
+}
+
+.desc-row {
+    margin-top: 20px;
+}
+
+.text-style {
+    font-family: 'EB Garamond',Georgia, serif;
+     color: $dark-color;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -200px;
+  /* Pad bottom by footer height */
+  padding: 0 0 200px;
+}
+.footer {
+    height: 200px;
+    padding: 30px 30px 0;
+}
+.footer-container {
+
+    background-color: #74322c;
+    box-shadow: inset 0 20px 50px -20px #42211d;
+    /*box-shadow: 10px 2px 30px 2px #42211d;*/
+}
+.element {
+    display:inline;
+}
+.info {
+    letter-spacing: 0.0625em;
+
+}
+
+.top-margin {
+    margin-top: 30px;
+}
+.info li {
+    color: #F5E9D3;
+    font-size: 1.6em;
+    font-weight: bold;
+    vertical-align: middle;
+    list-style-type: none;
+    padding:0;
+
+}
+.info li a {
+        color: #F5E9D3;
+
+}
+
+.icons {
+    fill: #F5E9D3;
+    margin-right:5px;
+}
+
+.center-block {float: none !important}
+
+.contact-form ul li {
+    list-style-type: none;
+    margin: 10px 0;
+
+}
+.contact-form ul li input, .contact-form ul li textarea {
+    font-size: 0.9em;
+}
+.contact-form button[type='submit'] {
+    border: 1.5px solid #74322c;
+    background: #F5E9D3;
+    color: #74322c;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-form button[type='submit']:hover {
+    background: #d7b999;
+    box-shadow: 1px 1px 1px #74322c;
+}
+
+.msg {
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+}
+
+
+/***** Typed cursor ****/
+
+.typed-cursor{
+    opacity: 1;
+    font-size: 2.5em;
+    color: #74322c;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+.main-text {
+    margin-top: 50px;
+}
+
+.footer-container {
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 5em;
+}
+
+}

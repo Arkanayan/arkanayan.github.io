@@ -1,0 +1,25 @@
+{
+  "name": "arkanayan.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkanayan/arkanayan.github.io.git"
+  },
+  "author": "Arka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arkanayan/arkanayan.github.io/issues"
+  },
+  "homepage": "https://github.com/Arkanayan/arkanayan.github.io#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

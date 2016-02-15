@@ -1,3 +1,4 @@
+
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
@@ -7,7 +8,9 @@
 ## Directory-based project format:
 .idea/
 # if you remove the above rule, at least ignore the following:
-
+/.sass-cache
+/node_modules
+/sass/main.css.map
 # User-specific stuff:
 # .idea/workspace.xml
 # .idea/tasks.xml
