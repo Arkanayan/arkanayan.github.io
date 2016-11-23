@@ -6,45 +6,50 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         watch: {
-            css: {
-                files: [
-                    'sass/*.scss'
-                ],
-                tasks: ['compass']
+            sass: {
+                files: "assets/sass/**/*.scss",
+                tasks: ['sass']
             },
         },
-        compass: {
+        // SASS task config
+        sass: {
             dist: {
-                options: {
-                    sassDir: 'sass',
-                    cssDir: 'css',
-                    outputStyle: 'expanded'
+                files: {
+                    // destination          // source file
+                  'assets/css/main.css': 'assets/sass/main.scss',
+                  'assets/css/ie8.css': 'assets/sass/ie8.scss',
+                  'assets/css/ie9.css': 'assets/sass/ie9.scss'
                 }
             }
         },
-        browserSync: {
-            files: {
-                src: [
-                    'css/*.css',
-                    '*.html'
-                ],
+
+    browserSync: {
+        default_options: {
+            bsFiles: {
+            
+                    src: [
+                        'assets/css/*.css',
+                        '*.html'
+                    ]
             },
-            options: {
-                server: {
-                    baseDir: "./"
-                },
+                options: {
+                    server: {
+                        baseDir: "./"
+                    },
 
-                watchTask: true
+                    watchTask: true
+                }
+
             }
-
         }
+    
 
     });
 
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-sass')
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 
-    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('default', ['browserSync', 'watch', 'sass']);
 
 };
